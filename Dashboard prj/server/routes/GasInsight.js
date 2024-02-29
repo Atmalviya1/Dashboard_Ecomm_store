@@ -2,9 +2,9 @@
 import express from 'express';
 const { Express } = express;
 
-import {getUser} from '../controllers/general.js';
+import {getGasInsight} from '../controllers/getGasInsight.js';
 
 const router = express.Router();
-router.get("/user/:id", getUser);
+router.get('/gasinsight', getGasInsight);
 
-export default router;    
+export default router;      
